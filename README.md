@@ -14,4 +14,7 @@
 <br>
 <img src="https://raw.githubusercontent.com/serengil/deepface/master/icon/deepface-icon-labeled.png" height=100px width=80px>
 
-
+# Instructions To Run
+- Clone the repository
+- Run `pipenv install` to install all the packages
+- Run `flask run` in the command prompt
