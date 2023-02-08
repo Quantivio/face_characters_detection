@@ -1,6 +1,6 @@
 # Face Detection API
 
-A simple face detection API made with Python and Flask, using the Deepface library.
+A simple face detection API made with Python Flask and FastAPI, using the Deepface library.
 
 ## Tech Stack
 
