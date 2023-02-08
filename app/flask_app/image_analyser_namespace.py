@@ -19,7 +19,7 @@ request_parser.add_argument(
 )
 
 
-@image_analyser_namespace.route("/detect", methods=["POST"])
+@image_analyser_namespace.route("/analyse", methods=["POST"])
 class DeepfaceImageAnalyse(Resource):
     @staticmethod
     @image_analyser_namespace.expect(request_parser)
@@ -35,7 +35,7 @@ class DeepfaceImageAnalyse(Resource):
                 status="Ok",
                 data=analysis,
             ).json()
-        except (ValueError, FileNotFoundError) as error:
+        except (ValueError, FileNotFoundError, TypeError) as error:
             logger.error(
                 function_name=function_name,
                 message=f"Exit - {function_name} Exception Occurred: {error}",

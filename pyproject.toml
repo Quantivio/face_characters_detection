@@ -20,6 +20,8 @@ gdown = "^4.6.0"
 pydantic = "^1.10.4"
 flask-restx = "^1.0.6"
 flask-cors = "^3.0.10"
+uvicorn = "^0.20.0"
+python-multipart = "^0.0.5"
 
 
 [tool.poetry.group.dev.dependencies]
