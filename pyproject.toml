@@ -19,6 +19,7 @@ tqdm = "^4.64.1"
 gdown = "^4.6.0"
 pydantic = "^1.10.4"
 flask-restx = "^1.0.6"
+flask-cors = "^3.0.10"
 
 
 [tool.poetry.group.dev.dependencies]
