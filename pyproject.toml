@@ -8,6 +8,11 @@ packages = [{include = "face_characters_detection"}]
 
 [tool.poetry.dependencies]
 python = "3.9.16"
+tensorflow-macos = "^2.11.0"
+tensorflow-metal = "^0.7.1"
+fastapi = "^0.90.0"
+flask = "^2.2.2"
+pillow = "^9.4.0"
 
 
 [build-system]
