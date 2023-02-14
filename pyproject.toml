@@ -49,7 +49,6 @@ fix = true
 show-source = true
 line-length = 120
 select = ["E", "F", "F401", "N801", "N802", "N803", "N805", "N806"]
-extend-select=["F401"]
 
 [tool.ruff.flake8-quotes]
 inline-quotes = "double"
