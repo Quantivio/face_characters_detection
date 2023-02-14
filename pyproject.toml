@@ -4,7 +4,7 @@ version = "0.1.0"
 description = "A simple Face detection API made with Python, Flask, and Deepface capable of detecting emotion, race, gender, and ethnicity"
 authors = ["Vetrichelvan"]
 readme = "README.md"
-packages = [{include = "face_characters_detection"}]
+packages = [{ include = "face_characters_detection" }]
 
 [tool.poetry.dependencies]
 python = "3.9.16"
@@ -26,7 +26,7 @@ python-multipart = "^0.0.5"
 
 
 [tool.poetry.group.dev.dependencies]
-black = {extras = ["d"], version = "^23.1.0"}
+black = { extras = ["d"], version = "^23.1.0" }
 isort = "^5.12.0"
 pre-commit = "^3.0.4"
 ruff = "^0.0.246"
@@ -48,7 +48,7 @@ target-version = "py311"
 fix = true
 show-source = true
 line-length = 120
-select = ["E", "F", "N801", "N802", "N803", "N805", "N806"]
+select = ["E", "F", "F401", "N801", "N802", "N803", "N805", "N806"]
 
 [tool.ruff.flake8-quotes]
 inline-quotes = "double"
