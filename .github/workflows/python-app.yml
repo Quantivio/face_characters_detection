@@ -24,6 +24,6 @@ jobs:
         uses: snok/install-poetry@v1
       - name: Install dependencies
         run: |
-          poetry install
+          poetry install --no-root
       - name: Run Ruff
         run: ruff check --format=github .
