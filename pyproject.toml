@@ -10,14 +10,15 @@ packages = [{include = "face_characters_detection"}]
 python = "3.9.16"
 tensorflow-macos = "^2.11.0"
 tensorflow-metal = "^0.7.1"
-fastapi = "^0.90.0"
+fastapi = "^0.92.0"
 flask = "^2.2.2"
 pillow = "^9.4.0"
 opencv-contrib-python = "^4.7.0.68"
 pandas = "^1.5.3"
 tqdm = "^4.64.1"
-gdown = "^4.6.0"
+gdown = "^4.6.3"
 pydantic = "^1.10.4"
+python-dotenv = "^0.21.1"
 flask-restx = "^1.0.6"
 flask-cors = "^3.0.10"
 uvicorn = "^0.20.0"
@@ -25,13 +26,45 @@ python-multipart = "^0.0.5"
 
 
 [tool.poetry.group.dev.dependencies]
-pylint = "^2.16.1"
-pylint-quotes = "^0.2.3"
 black = {extras = ["d"], version = "^23.1.0"}
 isort = "^5.12.0"
 pre-commit = "^3.0.4"
-python-dotenv = "^0.21.1"
+ruff = "^0.0.246"
 
 [build-system]
 requires = ["poetry-core"]
 build-backend = "poetry.core.masonry.api"
+
+[tool.black]
+line-length = 120
+
+[tool.isort]
+profile = "black"
+known_third_party = ["faag_cli"]
+
+[tool.ruff]
+src = ["."]
+target-version = "py311"
+fix = true
+show-source = true
+line-length = 120
+select = ["E", "F", "N801", "N802", "N803", "N805", "N806"]
+
+[tool.ruff.flake8-quotes]
+inline-quotes = "double"
+multiline-quotes = "double"
+docstring-quotes = "double"
+
+
+[tool.ruff.flake8-tidy-imports]
+ban-relative-imports = "all"
+
+[tool.ruff.flake8-type-checking]
+strict = true
+
+[tool.ruff.isort]
+combine-as-imports = true
+known-third-party = ["faag_cli"]
+
+[tool.mypy]
+strict = true
