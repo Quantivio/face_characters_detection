@@ -1,4 +1,4 @@
-name: Faag_CLI Checks
+name: Lint Checks
 
 on:
   push:
