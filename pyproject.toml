@@ -8,28 +8,28 @@ packages = [{ include = "face_characters_detection" }]
 
 [tool.poetry.dependencies]
 python = "3.9.16"
-tensorflow-macos = "^2.11.0"
-tensorflow-metal = "^0.7.1"
-fastapi = "^0.92.0"
-flask = "^2.2.2"
-pillow = "^9.4.0"
-opencv-contrib-python = "^4.7.0.68"
-pandas = "^1.5.3"
-tqdm = "^4.64.1"
-gdown = "^4.6.3"
-pydantic = "^1.10.4"
-python-dotenv = "^0.21.1"
-flask-restx = "^1.0.6"
+tensorflow-macos = "^2.12.0"
+tensorflow-metal = "^0.8.0"
+fastapi = "^0.95.1"
+flask = "^2.2.3"
+pillow = "^9.5.0"
+opencv-contrib-python = "^4.7.0.72"
+pandas = "^2.0.0"
+tqdm = "^4.65.0"
+gdown = "^4.7.1"
+pydantic = "^1.10.7"
+python-dotenv = "^1.0.0"
+flask-restx = "^1.1.0"
 flask-cors = "^3.0.10"
-uvicorn = "^0.20.0"
-python-multipart = "^0.0.5"
+uvicorn = "^0.21.1"
+python-multipart = "^0.0.6"
 
 
 [tool.poetry.group.dev.dependencies]
-black = { extras = ["d"], version = "^23.1.0" }
+black = { extras = ["d"], version = "^23.3.0" }
 isort = "^5.12.0"
-pre-commit = "^3.0.4"
-ruff = "^0.0.246"
+pre-commit = "^3.2.2"
+ruff = "^0.0.261"
 
 [build-system]
 requires = ["poetry-core"]
